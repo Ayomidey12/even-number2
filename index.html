@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Find even and odd number!</h1>
+
+   <span>Enter number</span> <br>
+   <input type="number" id="oddeven" onkeyup="isCheck()">  <span id="showmsg"></span><br>
+
+
+   <script>
+       function isCheck() {
+        //    alert("num")
+           let num = oddeven.value;
+        if (num % 2 === 0 ) {
+            showmsg.innerHTML = "This Number Is Even Number";
+            showmsg.style.color = "green";
+        }
+         else{
+            showmsg.innerHTML = "This Number Is Odd Number";
+            showmsg.style.color = "red";
+        }
+       }
+   </script>
+</body>
+</html>
